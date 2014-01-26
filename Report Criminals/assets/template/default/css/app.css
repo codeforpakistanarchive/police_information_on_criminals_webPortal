@@ -1,0 +1,96 @@
+.navbars{
+    background: url(../images/navbar-back.png) repeat-x;
+    height:33px;
+    margin-top: 1%;
+    border-radius:8px;
+}
+.backList{
+    background: url(../images/navbar-back.png) repeat-x;
+    height:33px;
+    margin-top: 1%;
+    border-radius:8px;
+    color:#FFF;
+}
+tr:hover{
+    background-image: -webkit-gradient(
+	linear,
+	right bottom,
+	right top,
+	color-stop(0, #4B50E3),
+	color-stop(1, #0C0F64)
+);
+background-image: -o-linear-gradient(top, #4B50E3 0%, #0C0F64 100%);
+background-image: -moz-linear-gradient(top, #4B50E3 0%, #0C0F64 100%);
+background-image: -webkit-linear-gradient(top, #4B50E3 0%, #0C0F64 100%);
+background-image: -ms-linear-gradient(top, #4B50E3 0%, #0C0F64 100%);
+background-image: linear-gradient(to top, #4B50E3 0%, #0C0F64 100%);
+    color:#FFF;
+    -moz-transform:scale(1.001);
+      -webkit-transform:scale(1.001);
+      -o-transform:scale(1.001);
+      transform:scale(1.001);
+	
+}
+.showTr{
+    background-image: -webkit-gradient(
+	linear,
+	right bottom,
+	right top,
+	color-stop(0, #4B50E3),
+	color-stop(1, #0C0F64)
+);
+background-image: -o-linear-gradient(top, #4B50E3 0%, #0C0F64 100%);
+background-image: -moz-linear-gradient(top, #4B50E3 0%, #0C0F64 100%);
+background-image: -webkit-linear-gradient(top, #4B50E3 0%, #0C0F64 100%);
+background-image: -ms-linear-gradient(top, #4B50E3 0%, #0C0F64 100%);
+background-image: linear-gradient(to top, #4B50E3 0%, #0C0F64 100%);
+    color:#FFF;
+    -moz-transform:scale(1.001);
+      -webkit-transform:scale(1.001);
+      -o-transform:scale(1.001);
+      transform:scale(1.001);
+      padding:10px;
+    
+}
+#alerts{border:1px solid #4a850b;}
+th:hover
+{
+    background: none;
+     -moz-transform:scale(1);
+      -webkit-transform:scale(1);
+      -o-transform:scale(1);
+      transform:scale(1);
+}
+.backList div{
+    padding:8px;
+}
+ul.dropdown{
+    list-style:none;
+}
+ul.dropdown li{
+    display:inline;
+    padding:15px;
+    color:#FFF;
+    font-weight:bold;
+}
+ul.dropdown li:hover{
+	
+}
+ul.dropdown li a{
+    color:#FFF;
+    font-size:15px;
+    text-decoration:none;
+}
+ul.dropdown li:hover{
+    -moz-transform:scale(2);
+      -webkit-transform:scale(1.2);
+      -o-transform:scale(1.2);
+      transform:scale(1.2);
+}
+.titles{
+    font-size:14px;
+}
+#footer{
+    margin-top:10%;
+}
+      

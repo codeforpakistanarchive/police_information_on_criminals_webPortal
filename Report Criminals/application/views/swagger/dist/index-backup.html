@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schoolfocus API</title>
+  <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'/>
+  <link href='https://api.schoolfocus.com/swagger/dist/css/highlight.default.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='https://api.schoolfocus.com/swagger/dist/css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+  <script type="text/javascript" src="https://api.schoolfocus.com/swagger/dist/lib/shred.bundle.js" ></script>  
+  <script src='https://api.schoolfocus.com/swagger/dist/lib/jquery-1.8.0.min.js' type='text/javascript'></script>
+  <script src='https://api.schoolfocus.com/swagger/dist/lib/jquery.slideto.min.js' type='text/javascript'></script>
+  <script src='https://api.schoolfocus.com/swagger/dist/lib/jquery.wiggle.min.js' type='text/javascript'></script>
+  <script src='https://api.schoolfocus.com/swagger/dist/lib/jquery.ba-bbq.min.js' type='text/javascript'></script>
+  <script src='https://api.schoolfocus.com/swagger/dist/lib/handlebars-1.0.0.js' type='text/javascript'></script>
+  <script src='https://api.schoolfocus.com/swagger/dist/lib/underscore-min.js' type='text/javascript'></script>
+  <script src='https://api.schoolfocus.com/swagger/dist/lib/backbone-min.js' type='text/javascript'></script>
+  <script src='https://api.schoolfocus.com/swagger/dist/lib/swagger.js' type='text/javascript'></script>
+  <script src='https://api.schoolfocus.com/swagger/dist/swagger-ui.js' type='text/javascript'></script>
+  <script src='https://api.schoolfocus.com/swagger/dist/lib/highlight.7.3.pack.js' type='text/javascript'></script>
+  <script type="text/javascript">
+    $(function () {
+      window.swaggerUi = new SwaggerUi({
+      url: "https://api.schoolfocus.com/api_doc",
+      dom_id: "swagger-ui-container",
+      supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
+      onComplete: function(swaggerApi, swaggerUi){
+        if(console) {
+          console.log("Loaded SwaggerUI")
+        }
+        $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+      },
+      onFailure: function(data) {
+        if(console) {
+          console.log("Unable to Load SwaggerUI");
+          console.log(data);
+        }
+      },
+      docExpansion: "none"
+    });
+
+    $('#input_apiKey').change(function() {
+      var key = $('#input_apiKey')[0].value;
+      console.log("key: " + key);
+      if(key && key.trim() != "") {
+        console.log("added key " + key);
+        window.authorizations.add("key", new ApiKeyAuthorization("api_key", key, "query"));
+      }
+    })
+    window.swaggerUi.load();
+  });
+
+  </script>
+</head>
+
+<body>
+<div id='header'>
+  <div class="swagger-ui-wrap">
+    <h2 style="color:white"> Schoolfocus - REST API Interface </h2>
+  </div>
+</div>
+
+<div id="message-bar" class="swagger-ui-wrap">
+  &nbsp;
+</div>
+
+<div id="swagger-ui-container" class="swagger-ui-wrap">
+
+</div>
+
+</body>
+
+</html>

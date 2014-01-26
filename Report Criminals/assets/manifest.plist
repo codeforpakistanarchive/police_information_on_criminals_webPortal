@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>URL</key>
+	<string>192.168.0.165:81/landro/assets/LandroVA.ipa</string>
+	<key>bundle-version</key>
+	<string>2.0</string>
+	<key>bundle-identifier</key>
+	<string>com.sigmatec.landrova</string>
+	<key>title</key>
+	<string>landro fai </string>
+	<key>display-image</key>
+	<string></string>
+	<key>full-size-image</key>
+	<string></string>
+</dict>
+</plist>
